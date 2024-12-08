@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: lms-system-deployment
+  name: stwtch-deployment
 spec:
-  replicas: 3 # You can adjust the number of replicas as needed
+  replicas: 6 # You can adjust the number of replicas as needed
   selector:
     matchLabels:
-      app: lms-system
+      app: stwtch
   template:
     metadata:
       labels:
-        app: lms-system
+        app: stwtch
     spec:
       containers:
-        - name: lms-system
-          image: yash5090/lms-system:latest # Replace with the actual image tag
+        - name: stwtch
+          image: yash5090/stwtch:latest # Replace with the actual image tag
           ports:
             - containerPort: 5000 # Replace with the port your Tetris game listens on
