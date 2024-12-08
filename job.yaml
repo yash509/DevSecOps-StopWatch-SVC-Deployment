@@ -1,13 +1,13 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: pe-wa-job
+  name: stwtch-job
 spec:
   template:
     spec:
       containers:
-      - name: pe-wa-job
-        image: yash5090/pe-wa:latest
+      - name: stwtch-job
+        image: yash5090/stwtch:latest
         ports:
         - containerPort: 5000
       restartPolicy: OnFailure
