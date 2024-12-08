@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: lms-system-service
+  name: stwtch-service
 spec:
   selector:
-    app: lms-system
+    app: stwtch
   ports:
     - protocol: TCP
       port: 5000
